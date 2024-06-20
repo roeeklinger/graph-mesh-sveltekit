@@ -1,0 +1,7 @@
+query MyQuery {
+  cards {
+    category
+    description
+    dexId
+  }
+}

@@ -1,5 +1,9 @@
-import { createBuiltMeshHTTPHandler } from '../../../.mesh'
+import { createServeRuntime } from '@graphql-mesh/serve-runtime'
 
-const meshHttp = createBuiltMeshHTTPHandler()
+const serve = createServeRuntime({
+  supergraph: 'schema.graphql', // working directory is root of the project
+  graphqlEndpoint: '/api', // matches the server route in vite
+  fetchAPI: { Response } // use the native `Response`
+});
 
-export { meshHttp as get, meshHttp as post }
+export { serve as GET, serve as POST }

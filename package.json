@@ -6,8 +6,7 @@
         "dev": "vite dev",
         "build": "vite build",
         "preview": "vite preview",
-        "build:mesh": "mesh build",
-        "serve:mesh": "mesh dev",
+        "compose": "mesh-compose",
         "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
         "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
     },
@@ -25,7 +24,7 @@
     },
     "type": "module",
     "dependencies": {
-        "@graphql-mesh/cli": "^0.91.0-alpha-20240620123302-b0b8c297177208f5e5378cf7da64c3220c4a9c0c",
-        "@graphql-mesh/graphql": "^0.98.9-alpha-20240620123302-b0b8c297177208f5e5378cf7da64c3220c4a9c0c"
+        "@graphql-mesh/compose-cli": "^0.4.2",
+        "@graphql-mesh/serve-runtime": "^0.4.4"
     }
 }

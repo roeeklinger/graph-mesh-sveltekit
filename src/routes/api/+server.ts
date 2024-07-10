@@ -10,6 +10,16 @@ const serve = createServeRuntime({
     Response,
     Headers,
     FormData,
+    ReadableStream,
+    WritableStream,
+    TransformStream,
+    Blob,
+    File,
+    crypto,
+    btoa,
+    TextEncoder,
+    TextDecoder,
+    URLPattern,
     URL,
     URLSearchParams
   }

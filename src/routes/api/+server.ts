@@ -8,8 +8,7 @@ const serve = createServeRuntime({
 
 async function handle(req: RequestEvent) {
   const res = await serve(req)
-  // convert mesh response to native response
-  return new Response(res.body, { status: res.status, statusText: res.statusText, headers: new Headers(res.headers) })
+  return new Response(res.body, res) // convert mesh response to native response
 }
 
 export { handle as GET, handle as POST }

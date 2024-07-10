@@ -2,9 +2,7 @@
 
 /** @type {import('houdini').ConfigFile} */
 const config = {
-    "watchSchema": {
-        "url": "https://api.tcgdex.net/v2/graphql",
-    },
+    schemaPath: 'schema.graphql',
     "plugins": {
         "houdini-svelte": {}
     }
